@@ -35,6 +35,12 @@ Disk* Tower::peek()
 
 void Tower::display()
 {
+    if(this->count == 0)
+    {
+        cout << "Empty Tower" << endl;
+        return;
+    }
+    
     //cout on each disks toString for the entire tower
     Disk* currDisk = this->top;
     while(currDisk)

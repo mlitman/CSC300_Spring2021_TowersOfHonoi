@@ -1,9 +1,10 @@
 #include "Tower.hpp"
-
+#define MAX_TOWERS 3 //macro which effectively says replace all occurance of MAX_TOWERS with a 3
+#define MAX_DISKS 3
 class Game
 {
     private:
-        Tower* theTowers[3];
+        Tower* theTowers[MAX_TOWERS];
 
     public:
         Game(); //setup our initial 3 towers with the disks on the far left
