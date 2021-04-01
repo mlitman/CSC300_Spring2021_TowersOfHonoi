@@ -10,6 +10,11 @@ Tower::Tower()
     this->count = 0;
 }
 
+int Tower::getCount()
+{
+    return this->count;
+}
+
 Disk* Tower::pop()
 {
     //remove the top element and return it or just return NULL if there is no top
@@ -30,7 +35,7 @@ Disk* Tower::pop()
 Disk* Tower::peek()
 {
     //returns without removing the top element or just return NULL if there is no top
-
+    return this->top;
 }
 
 void Tower::display()
@@ -40,7 +45,7 @@ void Tower::display()
         cout << "Empty Tower" << endl;
         return;
     }
-    
+
     //cout on each disks toString for the entire tower
     Disk* currDisk = this->top;
     while(currDisk)

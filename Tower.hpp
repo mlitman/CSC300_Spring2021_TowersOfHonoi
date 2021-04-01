@@ -12,4 +12,5 @@ class Tower
         Disk* peek();
         void push(Disk* d);
         void display();
+        int getCount();
 };
